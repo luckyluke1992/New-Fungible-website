@@ -1,0 +1,79 @@
+body{
+  background-color: #04040C;
+}
+
+#tokenomics {
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #155a67, #dae2f8);
+    border-radius: 20px; /* Increased border radius for a softer, more contemporary look */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Slightly elevated shadow for depth */
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #tokenomics:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for a lifted effect */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #04040C;
+    margin-bottom: 30px;
+    font-size: 36px; /* Larger font size for a bold heading */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Increased spacing between details */
+  }
+  
+  .category, .amount {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px; /* Larger font size for better readability */
+    transition: color 0.3s ease;
+  }
+  
+  .amount {
+    color: #155a67;
+  }
+  
+  /* Enhanced button animation for a modern touch */
+  .button:focus {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 118, 255, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(0, 118, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(0, 118, 255, 0);
+    }
+  }
+  
+  /* Responsive typography adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+    
+    .category, .amount {
+      font-size: 16px; /* Smaller font size for better readability on smaller screens */
+    }
+  
+    /* Adjusted padding for smaller screens */
+    #tokenomics {
+      padding: 30px;
+    }
+  }
